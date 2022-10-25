@@ -36,7 +36,7 @@ jobs:
         with:
           apisec-username: ${{ secrets.apisec_username }}
           apisec-password: ${{ secrets.apisec_password }}
-          apisec-project: "netbanking2"
+          apisec-project: "TestNB"
           apisec-profile: "Master"
           apisec-region: "Super_3"
 
