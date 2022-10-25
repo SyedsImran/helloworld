@@ -36,7 +36,7 @@ jobs:
         with:
           apisec-username: ${{ secrets.apisec_username }}
           apisec-password: ${{ secrets.apisec_password }}
-          apisec-project: "TestNB"
+          apisec-project: "PostmanWorkspace Team Red Panda All in One"
           apisec-profile: "Master"
           apisec-region: "Super_3"
 
