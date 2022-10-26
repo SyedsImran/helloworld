@@ -23,16 +23,9 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      #- uses: actions/checkout@v3
-
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Hello, world!
-
       - name: APIsec Trigger Scan
         # You may pin to the exact commit or the version.
-        # uses: SyedsImran/NewDrone@3a4dc52369aaeb9f76cf568e78aeb08337d565e3
+        # uses: SyedsImran/NewDrone@324113088dd581abbb6d3baa0e8b05de1c6c3037
         uses: SyedsImran/NewDrone@v1.0.1
         with:
           # The APIsec username with which the scans will be executed
@@ -55,6 +48,9 @@ jobs:
           apisec-playbook-regenerate: true
           # Whether to trigger scan email reports, if yes pass value as "true" or else "false"
           apisec-email-report: true
+          # APIsec Product HostName/URL
+          apisec-hostname: ''
+
 
 #       - name: Trigger APIsec scan
 #         id: scan
