@@ -40,7 +40,7 @@ jobs:
           # The Password of the APIsec user with which the scans will be executed
           apisec-password: ${{ secrets.apisec_password }}
           # The Name of the project for security scan
-          apisec-project: "testingapiproject"
+          apisec-project: "testingnetbaning"
           # The Name of the scan profile to be executed
           apisec-profile: "Master"
           # The location the scan will be executed in
@@ -48,7 +48,7 @@ jobs:
           # The path to the sarif format result file
           sarif-result-file: "sarif"
           # The severity to verify like "Critical", "High" ..etc based on which to break pipeline
-          apisec-severity: "High"
+          apisec-severity: "Critical"
           # The threshold severity count of "Critical", "High" ..etc based on which to break pipeline
           apisec-threshold: 2
           # Whether to regenerate the playbooks, if yes pass value as "true" or else "false"
