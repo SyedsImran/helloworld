@@ -41,15 +41,16 @@ jobs:
           # The path to the sarif format result file
           sarif-result-file: "sarif"
           # The severity to verify like "Critical", "High" ..etc based on which to break pipeline
-          apisec-severity: "High"
+          #apisec-severity: "High"
           # The threshold severity count of "Critical", "High" ..etc based on which to break pipeline
-          apisec-threshold: 2
+          #apisec-threshold: 2
           # Whether to regenerate the playbooks, if yes pass value as "true" or else "false"
           apisec-playbook-regenerate: true
           # Whether to trigger scan email reports, if yes pass value as "true" or else "false"
           apisec-email-report: true
           # APIsec Product HostName/URL
           apisec-hostname: ''
+          apisec-vulnerability-policy: true
 
 
 #       - name: Trigger APIsec scan
