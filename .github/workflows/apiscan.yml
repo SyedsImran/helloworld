@@ -15,14 +15,18 @@ jobs:
           apisec-project: "netbankingtet123"
           apisec-profile: "Master"
           apisec-region: "Super_1"
-          sarif-result-file: "sarif"
-          #apisec-severity: "High"
+          sarif-result-file: "apisec-results.sarif"
+          apisec-severity: "Critical"
           #apisec-threshold: 2
           apisec-playbook-regenerate: true
           apisec-email-report: true
           apisec-hostname: 'https://developer.apisec.ai'
-          apisec-vulnerability-policy: true
+          apisec-vulnerability-policy: false
 
+      - name: upload sarif file to repository
+        uses: github/codeql-action/upload-sarif@v1
+        with:
+          sarif_file: ./apisec-results.sarif
 
 
 
