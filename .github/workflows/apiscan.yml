@@ -33,7 +33,7 @@ jobs:
           # The Password of the APIsec user with which the scans will be executed
           apisec-password: ${{ secrets.apisec_password }}
           # The Name of the project for security scan
-          apisec-project: "testingapiproject"
+          apisec-project: "netbankingtet123"
           # The Name of the scan profile to be executed
           apisec-profile: "Master"
           # The location the scan will be executed in
@@ -49,7 +49,7 @@ jobs:
           # Whether to trigger scan email reports, if yes pass value as "true" or else "false"
           apisec-email-report: true
           # APIsec Product HostName/URL
-          apisec-hostname: ''
+          apisec-hostname: 'https://developer.apisec.ai'
           apisec-vulnerability-policy: true
 
 
