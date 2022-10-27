@@ -37,7 +37,7 @@ jobs:
           # The Name of the scan profile to be executed
           apisec-profile: "Master"
           # The location the scan will be executed in
-          apisec-region: "Super_3"
+          apisec-region: "Super_1"
           # The path to the sarif format result file
           sarif-result-file: "sarif"
           # The severity to verify like "Critical", "High" ..etc based on which to break pipeline
