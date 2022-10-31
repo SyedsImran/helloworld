@@ -8,20 +8,20 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: APIsec Trigger Scan
-        uses: SyedsImran/NewDrone@v1.0.1
+        uses: apisec-inc/apisec-run-scan@v1.0.6
         with:
           apisec-username: ${{ secrets.apisec_username }}
           apisec-password: ${{ secrets.apisec_password }}
           apisec-project: "netbankingtet123"
           apisec-profile: "Master"
-          apisec-region: "Super_1"
+          #apisec-region: "Super_1"
           sarif-result-file: "apisec-results.sarif"
-          apisec-severity: "Critical"
+          #apisec-severity: "Critical"
           #apisec-threshold: 2
-          apisec-playbook-regenerate: true
+          #apisec-refresh-playbooks: true
           apisec-email-report: true
           apisec-hostname: 'https://developer.apisec.ai'
-          apisec-vulnerability-policy: false
+          apisec-fail-on-high-vulns: true
 
       - name: upload sarif file to repository
         uses: github/codeql-action/upload-sarif@v1
