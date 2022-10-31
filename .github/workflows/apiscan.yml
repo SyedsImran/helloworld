@@ -12,15 +12,15 @@ jobs:
         with:
           apisec-username: ${{ secrets.apisec_username }}
           apisec-password: ${{ secrets.apisec_password }}
-          apisec-project: "netbankingtet123"
+          apisec-project: "TelusProject1"
           apisec-profile: "Master"
-          #apisec-region: "Super_1"
+          apisec-region: "US_EAST_1"
           sarif-result-file: "apisec-results.sarif"
           #apisec-severity: "Critical"
           #apisec-threshold: 2
           #apisec-refresh-playbooks: true
           apisec-email-report: true
-          apisec-hostname: 'https://developer.apisec.ai'
+          #apisec-hostname: 'https://developer.apisec.ai'
           apisec-fail-on-high-vulns: true
 
       - name: upload sarif file to repository
