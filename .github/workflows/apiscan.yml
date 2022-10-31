@@ -23,10 +23,10 @@ jobs:
           #apisec-hostname: 'https://developer.apisec.ai'
           #apisec-fail-on-high-vulns: true
 
-      - name: upload sarif file to repository
-        uses: github/codeql-action/upload-sarif@v1
-        with:
-          sarif_file: ./apisec-results.sarif
+#       - name: upload sarif file to repository
+#         uses: github/codeql-action/upload-sarif@v1
+#         with:
+#           sarif_file: ./apisec-results.sarif
 
 
 
