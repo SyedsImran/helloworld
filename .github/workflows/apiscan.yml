@@ -13,9 +13,9 @@ jobs:
           apisec-username: ${{ secrets.apisec_username }}
           apisec-password: ${{ secrets.apisec_password }}
           apisec-project: "TelusProject1"
-          apisec-profile: "Master"
+          #apisec-profile: "Master"
           apisec-region: "US_EAST_1"
-          sarif-result-file: "apisec-results.sarif"
+          #sarif-result-file: "apisec-results.sarif"
           #apisec-severity: "Critical"
           #apisec-threshold: 2
           #apisec-refresh-playbooks: true
