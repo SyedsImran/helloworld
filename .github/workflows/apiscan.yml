@@ -23,7 +23,7 @@ jobs:
           apisec-oas: true
           apisec-openapi-spec-url: 'http://netbanking.apisec.ai:8080/v2/api-docs'
           #apisec-hostname: 'https://developer.apisec.ai'
-          #apisec-fail-on-high-vulns: true
+          apisec-fail-on-vuln-severity: 'High'
 
 #       - name: upload sarif file to repository
 #         uses: github/codeql-action/upload-sarif@v1
