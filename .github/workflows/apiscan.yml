@@ -13,17 +13,15 @@ jobs:
           apisec-username: ${{ secrets.apisec_username }}
           apisec-password: ${{ secrets.apisec_password }}
           apisec-project: "TelusProject12"
-          #apisec-profile: "Master"
+          apisec-profile: "Master"
           apisec-region: "US_EAST_1"
           #sarif-result-file: "apisec-results.sarif"
-          #apisec-severity: "Critical"
-          #apisec-threshold: 2
-          apisec-refresh-playbooks: true
-          apisec-email-report: true
-          apisec-oas: true
-          apisec-openapi-spec-url: 'http://netbanking.apisec.ai:8080/v2/api-docs'
-          #apisec-hostname: 'https://developer.apisec.ai'
-          apisec-fail-on-vuln-severity: ''
+          apisec-refresh-playbooks: "true"
+          apisec-email-report: "true"
+          apisec-oas: "true"
+          apisec-openapi-spec-url: "http://netbanking.apisec.ai:8080/v2/api-docs"
+          #apisec-hostname: "https://developer.apisec.ai"
+          apisec-fail-on-vuln-severity: ""
 
 #       - name: upload sarif file to repository
 #         uses: github/codeql-action/upload-sarif@v1
