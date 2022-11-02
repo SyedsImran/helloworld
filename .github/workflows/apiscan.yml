@@ -16,7 +16,7 @@ jobs:
           apisec-profile: "Master"
           apisec-region: "US_EAST_1"
           #sarif-result-file: "apisec-results.sarif"
-          apisec-refresh-playbooks: "true"
+          apisec-refresh-playbooks: true
           apisec-email-report: "true"
           apisec-oas: "true"
           apisec-openapi-spec-url: "http://netbanking.apisec.ai:8080/v2/api-docs"
