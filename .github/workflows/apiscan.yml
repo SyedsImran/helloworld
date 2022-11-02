@@ -12,7 +12,7 @@ jobs:
         with:
           apisec-username: ${{ secrets.apisec_username }}
           apisec-password: ${{ secrets.apisec_password }}
-          apisec-project: "TelusProject12"
+          apisec-project: "TelusProject123"
           apisec-profile: "Master"
           apisec-region: "US_EAST_1"
           #sarif-result-file: "apisec-results.sarif"
