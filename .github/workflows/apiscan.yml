@@ -12,14 +12,14 @@ jobs:
         with:
           apisec-username: ${{ secrets.apisec_username }}
           apisec-password: ${{ secrets.apisec_password }}
-          apisec-project: "TelusProject1234"
+          apisec-project: "restProject1234"
           apisec-profile: "Master"
-          apisec-region: "US_EAST_1"
+          apisec-region: "automation"
           sarif-result-file: "apisec-results.sarif"          
-          apisec-refresh-playbooks: "true"
+          apisec-refresh-playbooks: "false"
           apisec-email-report: "true"
           apisec-oas: "true"
-          apisec-openapi-spec-url: "http://netbanking.apisec.ai:8080/v2/api-docs"
+          apisec-openapi-spec-url: "https://raw.githubusercontent.com/apisec-inc/Netbanking-Specs/main/qa-netbanking-spec.json"
           #apisec-hostname: "https://developer.apisec.ai"
           apisec-fail-on-vuln-severity: ""
 
